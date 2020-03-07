@@ -15,7 +15,7 @@
     "eslint",
     "config"
   ],
-  "author": "Georgiy Tarasov",
+  "author": "Georgiy Tarasov <skoob17@mail.ru>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ridgebox-dev/eslint-config/issues"
