@@ -1,0 +1,34 @@
+{
+  "name": "@ridgebox/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint config of Ridgebox.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridgebox-dev/eslint-config.git"
+  },
+  "keywords": [
+    "ridgebox.com",
+    "eslint",
+    "config"
+  ],
+  "author": "Georgiy Tarasov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ridgebox-dev/eslint-config/issues"
+  },
+  "homepage": "https://github.com/ridgebox-dev/eslint-config#readme",
+  "peerDependencies": {
+    "babel-eslint": ">= 10.1.0",
+    "eslint": ">= 6.8.0",
+    "eslint-config-airbnb": ">= 18.0.1",
+    "eslint-plugin-import": ">= 2.20.1",
+    "eslint-plugin-react-hooks": ">= 2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
