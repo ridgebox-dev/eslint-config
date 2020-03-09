@@ -46,6 +46,7 @@ module.exports = {
         ignoreJSX: 'multi-line',
         enforceForArrowConditionals: false,
         enforceForNewInMemberExpressions: false,
+        nestedBinaryExpressions: false,
       },
     ],
     'arrow-body-style': 'off',
