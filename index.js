@@ -53,8 +53,8 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
-      extensions: ['.ios.js', '.android.js', '.js', '.json'],
       node: {
+        extensions: ['.ios.js', '.android.js', '.js', '.json'],
         paths: [
           'src'
         ],
