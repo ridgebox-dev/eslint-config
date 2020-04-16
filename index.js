@@ -40,7 +40,7 @@ module.exports = {
       },
     ],
     'no-extra-parens': [
-      'error',
+      'warn',
       'all',
       {
         ignoreJSX: 'multi-line',
@@ -53,6 +53,7 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
+      extensions: ['.ios.js', '.android.js', '.js', '.json'],
       node: {
         paths: [
           'src'
