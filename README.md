@@ -1,4 +1,4 @@
-# (Ridgebox.com)[https://ridgebox.com] ESLint Config
+# [Ridgebox.com](https://ridgebox.com) ESLint Config
 
 To install:
 ```
