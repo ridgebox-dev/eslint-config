@@ -18,7 +18,7 @@ module.exports = {
             groups: [
               // Packages. `react` related packages come first.
               // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
-              ['^react$', '^@?\\w', '^redux$'],
+              ['^react$', '^prop-types$', '^@?\\w', '^redux$'],
               // Absolute imports
               [`^(${folders.join('|')})(/.*|$)`],
               // Relative imports.
