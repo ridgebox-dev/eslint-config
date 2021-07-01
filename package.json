@@ -1,6 +1,6 @@
 {
   "name": "@ridgebox/eslint-config",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "ESLint config of Ridgebox.com",
   "main": "index.js",
   "repository": {
@@ -18,20 +18,13 @@
     "url": "https://github.com/ridgebox-dev/eslint-config/issues"
   },
   "homepage": "https://github.com/ridgebox-dev/eslint-config#readme",
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0"
+  },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.x",
-    "@typescript-eslint/parser": "4.x",
-    "babel-eslint": "10.x",
-    "eslint": "7.x",
-    "eslint-config-prettier": "6.x",
-    "eslint-config-react-app": "6.x",
-    "eslint-plugin-flowtype": "5.x",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-prettier": "3.x",
-    "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "4.x",
-    "eslint-plugin-simple-import-sort": "5.x",
-    "prettier": "2.x"
+    "eslint": ">=5.0.0",
+    "prettier": ">=1.13.0"
   }
 }

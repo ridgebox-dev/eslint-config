@@ -1,18 +1,19 @@
 const fs = require('fs');
 
-const folders = fs
-  .readdirSync('src', { withFileTypes: true })
-  .filter((dirent) => dirent.isDirectory())
-  .map((dirent) => dirent.name);
+const folders = fs.existsSync('src') ?
+  fs.readdirSync('src', { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name)
+  : undefined;
 
 module.exports = {
-  extends: ['react-app', 'plugin:prettier/recommended', 'prettier/react'],
+  extends: ['plugin:prettier/recommended'],
   plugins: ['simple-import-sort'],
   overrides: [
     {
       files: ['*.tsx', '*.ts', '*.js', '*.jsx'],
       rules: {
-        'simple-import-sort/sort': [
+        'simple-import-sort/imports': [
           'warn',
           {
             groups: [
@@ -20,12 +21,12 @@ module.exports = {
               // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
               ['^\\u0000', '^react$', '^prop-types$', '^@?\\w', '^redux$'],
               // Absolute imports
-              [`^(${folders.join('|')})(/.*|$)`],
+              folders ? [`^(${folders.join('|')})(/.*|$)`] : undefined,
               // Relative imports.
               ['^\\.'],
               // for scss imports.
               ['^[^.]'],
-            ],
+            ].filter((rule) => rule),
           },
         ],
       },
