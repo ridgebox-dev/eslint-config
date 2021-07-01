@@ -13,6 +13,7 @@ module.exports = {
     {
       files: ['*.tsx', '*.ts', '*.js', '*.jsx'],
       rules: {
+        'react/display-name': 'off',
         'simple-import-sort/imports': [
           'warn',
           {
