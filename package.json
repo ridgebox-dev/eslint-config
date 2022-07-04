@@ -1,6 +1,6 @@
 {
   "name": "@ridgebox/eslint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "ESLint config of Ridgebox.com",
   "main": "index.js",
   "repository": {
@@ -19,12 +19,12 @@
   },
   "homepage": "https://github.com/ridgebox-dev/eslint-config#readme",
   "dependencies": {
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^7.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=5.0.0",
-    "prettier": ">=1.13.0"
+    "eslint": ">=7.0.0",
+    "prettier": ">=2.0.0"
   }
 }
